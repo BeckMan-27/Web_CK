@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ĐỒNG HỒ NAM</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../img/fontawesome-free-6.5.2-web/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../img/themify-icons/themify-icons.css">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark shadow-sm"
+                style="background: linear-gradient(90deg, #000000, #21a0ba);">
+                <div class="container-fluid">
+                    <!-- Logo -->
+                    <a class="navbar-brand d-flex align-items-center" href="../html/index.html">
+                        <img src="../img/logomoi.jpg" alt="" height="60" class="me-2">
+                        <span class="fw-semibold fs-5"></span>
+                    </a>
+
+                    <!-- Nút menu mobile -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- Nội dung navbar -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link text-white active" aria-current="page"
+                                    href="../html/index.html">Trang
+                                    chủ</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Sản phẩm
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="../html/donghonam.html">Đồng hồ nam</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="../html/Donghonu.html">Đồng hồ nữ</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="../html/Donghotreem.html">Đồng hồ trẻ
+                                            em</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="../html/unisex.html">Đồng hồ unisex
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white active" aria-current="page"
+                                    href="../html/Bangioihan.html">Bản
+                                    giới hạn
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="../html/gioithieu.html">Giới thiệu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="../html/news1.html">Tin tức</a>
+                            </li>
+                        </ul>
+
+                        <!-- Ô tìm kiếm -->
+                        <form class="d-flex me-3">
+                            <input class="form-control me-2" type="search" placeholder="Tìm kiếm..."
+                                aria-label="Search">
+                            <button class="btn btn-outline-light" type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </form>
+
+                        <!-- Đăng nhập / Đăng ký -->
+                        <div class="btn-group me-3">
+                            <button class="btn btn-outline-light" data-bs-toggle="modal"
+                                data-bs-target="#loginModal">Đăng
+                                nhập</button>
+                            <button class="btn btn-outline-light" data-bs-toggle="modal"
+                                data-bs-target="#registerModal">Đăng ký</button>
+                        </div>
+
+                        <!-- Giỏ hàng -->
+                        <a href="../html/gioHang.html" class="text-white fs-4">
+                            <i class="fas fa-cart-plus"></i>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+
+        </header>
+        <!--banner-->
+        <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true"
+                    aria-label="First slide"></li>
+                <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+                <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox" style="margin-top: 100px;">
+                <div class="carousel-item active">
+                    <img src="../img/bannerdhnam1.jpg" class="w-100 d-block" alt="First slide" />
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/banner2.jpg" class="w-100 d-block" alt="Second slide" />
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/Banner dhnam2.png" class="w-100 d-block" alt="Third slide" />
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- CHỌN GIÁ -->
+        <section class="price-filter py-4">
+            <div class="container text-center">
+                <h5 class="mb-3 fw-semibold">Chọn khoảng giá bạn quan tâm</h5>
+                <div class="d-flex justify-content-center flex-wrap gap-2">
+                    <button class="btn btn-outline-danger px-4">Dưới 1.000.000₫</button>
+                    <button class="btn btn-outline-danger px-4">1.000.000₫ - 2.000.000₫</button>
+                    <button class="btn btn-outline-danger px-4">2.000.000₫ - 5.000.000₫</button>
+                    <button class="btn btn-outline-danger px-4">5.000.000₫ - 10.000.000₫</button>
+                    <button class="btn btn-outline-danger px-4">Trên 10.000.000₫</button>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- CONTENT -->
+        <div class="content">
+            <div class="categori-watch">
+                <h2>ĐỒNG HỒ NAM</h2>
+                <div class="list-product">
+                    <!-- Begin row1 -->
+                    <div class="row1">
+                        <div class="row">
+                            <!-- col thứ nhất -->
+                            <div class="col-md">
+                                <div class="product">
+                                    <a href="chitietsp.html?product=5">
+                                        <img src="/Nhom01_BaiTapLonWeb-main/img/NAM/N1.png" alt="" width="100%">
+                                    </a>
+                                    <div class="product-name">
+                                        <a href="chitietsp.html?product=5">Đồng hồ Casio Nam MTP-M307D-2BVDF Chính hãng
+                                            MTP-M307D-2BVDF</a>
+                                    </div>
+                                    <p class="product-price">
+                                        3,767,000₫
+                                    </p>
+                                    <div class="product-stars">
+                                        <i class="ti-star" style="color: gold;"></i>
+                                        <i class="ti-star" style="color: gold;"></i>
+                                        <i class="ti-star" style="color: gold;"></i>
+                                        <i class="ti-star" style="color: gold;"></i>
+                                        <i class="ti-star" style="color: gold;"></i>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- col thứ hai -->
+                            <div class="col-md">
+                                <div class="product">
+                                    <a href="chitietsp.html?product=6">
+                                        <img src="/Nhom01_BaiTapLonWeb-main/img/NAM/N2.png" alt="" width="100%">
+                                    </a>
+                                    <div class="product-name">
+                                        <a href="chitietsp.html?product=6">Đồng hồ Casio Nam MTP-M306D-2AVDF Chính
+                                            hãngMTP-M306D-2AVDF</a>
+                                    </div>
+                                    <p class="product-price">
+                                        3,767,000₫
+                                    </p>
+                                    <div class="product-stars">
+                                        <i class="ti-star" style="color: gold;"></i>
+                                        <i class="ti-star" style="color: gold;"></i>
+                                        <i class="ti-star" style="color: gold;"></i>
+                                        <i class="ti-star" style="color: gold;"></i>
+                                        <i class="ti-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- col thứ ba -->
+                            <div class="col-md">
+                                <div class="product">
+                                    <a href="chitietsp.html?product=7">
+                                        <img src="/Nhom01_BaiTapLonWeb-main/img/NAM/N3.png" alt="" width="100%">
+                                    </a>
+                                    <div class="product-name">
+                                        <a href="chitietsp.html?product=7">Đồng hồ Casio Nam MTP-M306M-1AVDF Chính hãng
+                                            MTP-M306M-1AVDF</a>
+                                    </div>
+                                    <p class="product-price">
+                                        3,767,000₫
+                                    </p>
+                                    <div class="product-stars">
+                                        <i class="ti-star" style="color: gold;"></i>
+                                        <i class="ti-star" style="color: gold;"></i>
+                                        <i class="ti-star" style="color: gold;"></i>
+                                        <i class="ti-star" style="color: gold;"></i>
+                                        <i class="ti-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- col thứ tư -->
+                            <div class="col-md">
+                                <div class="product">
+                                    <a href="chitietsp.html?product=8">
+                                        <img src="/Nhom01_BaiTapLonWeb-main/img/NAM/N4.png" alt="" width="100%">
+                                    </a>
+                                    <div class="product-name">
+                                        <a href="chitietsp.html?product=8">Đồng hồ Casio Nam MTP-1303DD-7AVDF Chính hãng
+                                            MTP-1303DD-7AVDF</a>
+                                    </div>
+                                    <p class="product-price">
+                                        1,503,000₫
+                                    </p>
+                                    <div class="product-stars">
+                                        <i class="ti-star" style="color: gold;"></i>
+                                        <i class="ti-star" style="color: gold;"></i>
+                                        <i class="ti-star" style="color: gold;"></i>
+                                        <i class="ti-star" style="color: gold;"></i>
+                                        <i class="ti-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- col thứ năm -->
+                            <div class="col-md">
+                                <div class="product">
+                                    <a href="chitietsp.html?product=9">
+                                        <img src="/Nhom01_BaiTapLonWeb-main/img/NAM/N5.png" alt="" width="100%">
+                                    </a>
+                                    <div class="product-name">
+                                        <a href="chitietsp.html?product=9">Đồng Hồ Casio Nữ LTP-1303LL-7AVDF Chính Hãng
+                                            LTP-1303LL-7AVDF</a>
+                                    </div>
+                                    <p class="product-price">
+                                        1,407,000₫
+                                    </p>
+                                    <div class="product-stars">
+                                        <i class="ti-star" style="color: gold;"></i>
+                                        <i class="ti-star" style="color: gold;"></i>
+                                        <i class="ti-star" style="color: gold;"></i>
+                                        <i class="ti-star" style="color: gold;"></i>
+                                        <i class="ti-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End row1 -->
+                </div>
+            </div>
+            <div class="mb-5 d-flex justify-content-center">
+                <a class="btn btn-outline-primary m-1" href="../html/donghonam.html">Trang đầu</a>
+                <a class="btn btn-outline-primary m-1" href="../html/Donghonu.html">1</a>
+                <a class="btn btn-outline-primary m-1" href="../html/Donghotreem.html">2</a>
+                <a class="btn btn-outline-primary m-1" href="../html/unisex.html">Trang cuối</a>
+            </div>
+        </div>
+
+
+
+        <!-- FOOTER -->
+        <footer class="bg-dark text-white pt-5 pb-4"
+            style="background: linear-gradient(90deg, #000000, #21a0ba); height: 400px; font-size: 20px; ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 mb-4">
+                        <h5>Về chúng tôi</h5>
+                        <p>Best choice to Watch - Shop đồng hồ uy tín cung cấp đồng hồ chính hãng với giá tốt nhất thị
+                            trường.
+                        </p>
+                        <div class="social-icons">
+                            <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-white me-2"><i class="fab fa-youtube"></i></a>
+                            <a href="#" class="text-white"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <h5>Thông tin</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white">Giới thiệu</a></li>
+                            <li><a href="#" class="text-white">Chính sách bảo mật</a></li>
+                            <li><a href="#" class="text-white">Điều khoản dịch vụ</a></li>
+                            <li><a href="#" class="text-white">Chính sách đổi trả</a></li>
+                            <li><a href="#" class="text-white">Hướng dẫn mua hàng</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <h5>Hỗ trợ</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white">Câu hỏi thường gặp</a></li>
+                            <li><a href="#" class="text-white">Hướng dẫn đặt hàng</a></li>
+                            <li><a href="#" class="text-white">Phương thức vận chuyển</a></li>
+                            <li><a href="#" class="text-white">Chính sách bảo hành</a></li>
+                            <li><a href="#" class="text-white">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <h5>Liên hệ</h5>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-map-marker-alt me-2"></i> 391 Sư Vạn Hạnh, phường 12, quận 10, TP.HCM
+                            </li>
+                            <li><i class="fas fa-phone me-2"></i> 0901.234.567</li>
+                            <li><i class="fas fa-envelope me-2"></i> info@shopdongho.com</li>
+                            <li><i class="fas fa-clock me-2"></i> Mở cửa: 8:00 - 21:00</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="my-4">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p>&copy; 2025 Shop Đồng Hồ. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Modal đăng nhập-->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form>
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="loginModalLabel">Đăng nhập</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">Email hoặc Tên đăng nhập</label>
+                            <input type="text" class="form-control" id="loginEmail"
+                                placeholder="Nhập email hoặc tên đăng nhập" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">Mật khẩu</label>
+                            <input type="password" class="form-control" id="loginPassword" placeholder="Nhập mật khẩu"
+                                required />
+                        </div>
+                        <div class="form-check mb-3">
+                            <input type="checkbox" class="form-check-input" id="rememberMe" />
+                            <label class="form-check-label" for="rememberMe">Ghi nhớ đăng nhập</label>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Đăng nhập</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Đăng ký -->
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form>
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="registerModalLabel">Đăng ký</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="registerName" class="form-label">Họ và tên</label>
+                            <input type="text" class="form-control" id="registerName" placeholder="Nhập họ và tên"
+                                required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="registerEmail" placeholder="Nhập email"
+                                required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerPassword" class="form-label">Mật khẩu</label>
+                            <input type="password" class="form-control" id="registerPassword"
+                                placeholder="Nhập mật khẩu" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerPasswordConfirm" class="form-label">Xác nhận mật khẩu</label>
+                            <input type="password" class="form-control" id="registerPasswordConfirm"
+                                placeholder="Xác nhận mật khẩu" required />
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Đăng ký</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

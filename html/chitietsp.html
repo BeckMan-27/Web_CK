@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết sp</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../img/fontawesome-free-6.5.2-web/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../img/themify-icons/themify-icons.css">
+    <script src="../js/chitietsp.js"></script>
+    <style>
+        .content {
+            margin-top: 50px;
+            padding: 40px 0;
+            background-color: #f9f9f9;
+        }
+
+        .masp-row {
+            background-color: #efe9ed;
+            border-radius: 15px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 15px auto;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            width: 95%;
+        }
+
+
+        .masp-row h3 {
+            font-size: 20px;
+            color: #333;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .small-info {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 8px 12px;
+            margin-top: 8px;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .small-info p {
+            font-size: 14px;
+            color: #555;
+            margin: 0;
+        }
+
+        .section {
+            margin: 20px 0;
+        }
+
+        .title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .icon-list {
+            display: flex;
+            gap: 15px;
+            list-style: none;
+            padding: 0;
+        }
+
+        .icon-list img {
+            width: 70px;
+            transition: 0.2s;
+        }
+
+        .icon-list img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- header -->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark shadow-sm"
+                style="background: linear-gradient(90deg, #000000, #21a0ba);">
+                <div class="container-fluid">
+                    <!-- Logo -->
+                    <a class="navbar-brand d-flex align-items-center" href="../html/index.html">
+                        <img src="../img/logomoi.jpg" alt="" height="60" class="me-2">
+                        <span class="fw-semibold fs-5"></span>
+                    </a>
+
+                    <!-- Nút menu mobile -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- Nội dung navbar -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link text-white active" aria-current="page"
+                                    href="../html/index.html">Trang
+                                    chủ</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Sản phẩm
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="../html/donghonam.html">Đồng hồ nam</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="../html/Donghonu.html">Đồng hồ nữ</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="../html/Donghotreem.html">Đồng hồ trẻ
+                                            em</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="../html/unisex.html">Đồng hồ unisex
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white active" aria-current="page"
+                                    href="../html/Bangioihan.html">Bản
+                                    giới hạn
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="../html/gioithieu.html">Giới thiệu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="../html/news1.html">Tin tức</a>
+                            </li>
+                        </ul>
+
+                        <!-- Ô tìm kiếm -->
+                        <form class="d-flex me-3">
+                            <input class="form-control me-2" type="search" placeholder="Tìm kiếm..."
+                                aria-label="Search">
+                            <button class="btn btn-outline-light" type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </form>
+
+                        <!-- Đăng nhập / Đăng ký -->
+                        <div class="btn-group me-3">
+                            <button class="btn btn-outline-light" data-bs-toggle="modal"
+                                data-bs-target="#loginModal">Đăng
+                                nhập</button>
+                            <button class="btn btn-outline-light" data-bs-toggle="modal"
+                                data-bs-target="#registerModal">Đăng ký</button>
+                        </div>
+
+                        <!-- Giỏ hàng -->
+                        <a href="../html/gioHang.html" class="text-white fs-4">
+                            <i class="fas fa-cart-plus"></i>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+
+        </header>
+
+        <!-- CONTENT -->
+        <div class="content">
+            <div class="detail">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="row border-black">
+                            <img id="productImage" src="#" alt="Hình ảnh sản phẩm" width="100%" height="100%">
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 masp-row text-center">
+                                <h3 id="MaSP">Mã sản phẩm</h3>
+                            </div>
+                        </div>
+
+
+                        <!-- Dòng nhỏ thêm vào -->
+                        <div class="row small-info">
+                            <p id="extraInfo">Tình trạng: Còn hàng</p>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-7">
+                        <div class="infor">
+                            <div class="row">
+                                <h3 id="productName">Tên sản phẩm</h3>
+                            </div>
+                            <div class="row">
+                                <p id="productPrice">Giá:</p>
+                            </div>
+
+
+                            <!-- Thêm nút tăng giảm số lượng -->
+
+                            <div class="row quantity">
+                                <div class="col-md-4">
+                                    <p>Số lượng :</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="js-qty">
+                                        <button onclick="decreaseQuantity()">-</button>
+                                        <span id="productQuantity">1</span>
+                                        <button onclick="increaseQuantity()">+</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-5"></div>
+                            </div>
+                            <!--tính tổng tiền -->
+                            <div class="row mt-3 " style="margin-left: 10px;">
+                                <div class="col-md-4">
+                                    <p><strong>Tổng tiền:</strong></p>
+                                </div>
+                                <div class="col-md-8">
+                                    <p id="tongTien" style="font-weight: bold; color: #d60000;">0 đ</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <button class="btn btn-add-to-cart btn-primary mt-3" style="height: 50px;">
+                                        <p>Thêm vào giỏ hàng
+                                            <i class="ti-shopping-cart"></i>
+                                        </p>
+                                    </button>
+                                </div>
+                                <div class="col-md-5">
+                                    <button class="btn btn-buy-now btn-success mt-3" style="height: 50px;">
+                                        <p>Mua ngay</p>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="thanhtoan" style="margin: 20px;">
+                                <div class="payment">
+                                    <!-- Phương thức thanh toán -->
+                                    <div class="section">
+                                        <p class="title">Phương thức thanh toán</p>
+                                        <ul class="icon-list">
+                                            <li><img src="../img/momo.webp"></li>
+
+                                            <li><img src="../img/vnpay.png"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+
+                                <!-- Phương thức vận chuyển -->
+                                <div class="section">
+                                    <p class="title">Phương thức vận chuyển</p>
+                                    <ul class="icon-list">
+                                        <li><img src="../img/shipment_1_img.webp"></li>
+                                        <li><img src="../img/shipment_3_img.webp"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- end infor-->
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white pt-5 pb-4"
+        style="background: linear-gradient(90deg, #000000, #21a0ba); height: 400px; font-size: 20px; ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <h5>Về chúng tôi</h5>
+                    <p>Best choice to Watch - Shop đồng hồ uy tín cung cấp đồng hồ chính hãng với giá tốt nhất thị
+                        trường.
+                    </p>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Thông tin</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Giới thiệu</a></li>
+                        <li><a href="#" class="text-white">Chính sách bảo mật</a></li>
+                        <li><a href="#" class="text-white">Điều khoản dịch vụ</a></li>
+                        <li><a href="#" class="text-white">Chính sách đổi trả</a></li>
+                        <li><a href="#" class="text-white">Hướng dẫn mua hàng</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Hỗ trợ</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Câu hỏi thường gặp</a></li>
+                        <li><a href="#" class="text-white">Hướng dẫn đặt hàng</a></li>
+                        <li><a href="#" class="text-white">Phương thức vận chuyển</a></li>
+                        <li><a href="#" class="text-white">Chính sách bảo hành</a></li>
+                        <li><a href="#" class="text-white">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Liên hệ</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt me-2"></i> 391 Sư Vạn Hạnh, phường 12, quận 10, TP.HCM
+                        </li>
+                        <li><i class="fas fa-phone me-2"></i> 0901.234.567</li>
+                        <li><i class="fas fa-envelope me-2"></i> info@shopdongho.com</li>
+                        <li><i class="fas fa-clock me-2"></i> Mở cửa: 8:00 - 21:00</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p>&copy; 2025 Shop Đồng Hồ. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <!-- Modal đăng nhập-->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form>
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="loginModalLabel">Đăng nhập</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">Email hoặc Tên đăng nhập</label>
+                            <input type="text" class="form-control" id="loginEmail"
+                                placeholder="Nhập email hoặc tên đăng nhập" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">Mật khẩu</label>
+                            <input type="password" class="form-control" id="loginPassword" placeholder="Nhập mật khẩu"
+                                required />
+                        </div>
+                        <div class="form-check mb-3">
+                            <input type="checkbox" class="form-check-input" id="rememberMe" />
+                            <label class="form-check-label" for="rememberMe">Ghi nhớ đăng nhập</label>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Đăng nhập</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Đăng ký -->
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form>
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="registerModalLabel">Đăng ký</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="registerName" class="form-label">Họ và tên</label>
+                            <input type="text" class="form-control" id="registerName" placeholder="Nhập họ và tên"
+                                required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="registerEmail" placeholder="Nhập email"
+                                required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerPassword" class="form-label">Mật khẩu</label>
+                            <input type="password" class="form-control" id="registerPassword"
+                                placeholder="Nhập mật khẩu" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerPasswordConfirm" class="form-label">Xác nhận mật khẩu</label>
+                            <input type="password" class="form-control" id="registerPasswordConfirm"
+                                placeholder="Xác nhận mật khẩu" required />
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Đăng ký</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
