@@ -1,3 +1,4 @@
+
 function signup() {
   const inputUsernameRegister = document.querySelector(".input-signup-username");
   const inputPasswordRegister = document.querySelector(".input-signup-password");
@@ -6,6 +7,7 @@ function signup() {
   const inputEmail = document.querySelector(".input-signup-email");
   const inputName = document.querySelector(".input-signup-name");
   const errorSpan = document.getElementById("tbUser");
+
 
   if (
     inputUsernameRegister.value === "" ||
@@ -31,5 +33,7 @@ function signup() {
     // lưu xuống bảng thành viên
     updateMemberList();
     window.location.href = "../html/thanhvien.html";
+
   }
+  
 }
